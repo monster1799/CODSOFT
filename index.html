@@ -1,62 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Manish Kumar - Portfolio</title>
+    <title>Basic Calculator</title>
 </head>
-
 <body>
-    <header>
-        <h1>MANISH KUMAR PASWAN</h1>
-        <p>Web Developer</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="hii.jpeg" alt="Your Name">
-        <p>"Hello, I'm Manish, a passionate web developer with a keen eye for design and a love for coding. I'm
-            dedicated to creating user-friendly and visually appealing websites. My journey in web development began May
-            2023, and since then, I've been on a mission to expand my skill set and take on exciting projects. I'm
-            fluent in HTML, CSS, and JavaScript and always eager to learn more. . Let's collaborate and turn your ideas
-            into stunning web experiences!"</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects:</h2>
-        <div class="project">
-            <h3>Personal Website:</h3>
-            <p> Create a portfolio website to showcase your skills, experience, and projects.</p>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToDisplay('/')">/</button>
         </div>
-        <div class="project">
-            <h3>E-commerce Site:</h3>
-            <p>Build an online store with features like product listings, shopping carts, and payment processing.</p>
-        </div>
-    </section>
+    </div>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <a href="javascript" download onclick="print()">Download Resume (PDF)</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: manishpaswan5978@gmail.com</p>
-        <p>Phone: +91XXXXX4421</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Manish</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
